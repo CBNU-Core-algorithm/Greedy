@@ -1,3 +1,5 @@
+#런타임 오류
+
 n = int(input())
 result = []
 
