@@ -1,0 +1,10 @@
+n = int(input())
+result = []
+
+for x in range(int(n/2)):
+    for y in range(int(n/2)):
+        if n == 5*x + 3*y:
+            result.append(x+y)
+if result == []:
+    print(-1)
+print(min(result))
