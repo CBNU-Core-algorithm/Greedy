@@ -1,0 +1,17 @@
+n = int(input())
+
+result = []
+sum = 0
+total = 0
+
+times = list(map(int, input().split()))
+times.sort()
+
+for i in times:
+    sum += i
+    result.append(sum)
+
+for i in result:
+    total += i
+
+print(total)
