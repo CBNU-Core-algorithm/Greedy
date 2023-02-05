@@ -1,0 +1,14 @@
+n, k = map(int, input().split())
+money = []
+count = 0
+for i in range(n):
+    money.append(input())
+
+for i in range(n-1, -1, -1):
+    if k // int(money[i]) != 0:
+        Q = k // int(money[i])
+        count += Q
+        k = k - Q * int(money[i])
+
+
+print(count)
